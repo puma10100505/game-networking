@@ -71,8 +71,10 @@ public:
 
     program_id_ = create_shader_program("vertex_shader.glsl", "fragment_shader.glsl");
 
-    if (!program_id_)
-      throw std::runtime_error(std::string("error when building shader program"));
+    if (!program_id_) {
+	//printf("error when building shader program\n");
+ 	throw std::runtime_error(std::string("error when building shader program"));
+    }
 
     glUseProgram(program_id_);
     glEnable(GL_DEPTH_TEST);

@@ -9,6 +9,7 @@
 #include <boost/bind.hpp>
 #include <boost/optional.hpp>
 #include "keyboard.hpp"
+#include <list>
 #include "misc.hpp"
 #include "network.hpp"
 #include "player.hpp"

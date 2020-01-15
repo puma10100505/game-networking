@@ -11,7 +11,7 @@
 
 class server {
 public:
-  static const int CLIENT_UPDATE_INTERVAL_MS = 50;
+  static const int CLIENT_UPDATE_INTERVAL_MS ;
 
   server(int port)
     : game_time_ms_(0),

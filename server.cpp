@@ -3,6 +3,8 @@
 #include "server.hpp"
 #include "misc.hpp"
 
+const int server::CLIENT_UPDATE_INTERVAL_MS = 50;
+
 int main(int argc, char const *argv[]) {
   if (argc < 2 || !misc::is_number(argv[1])) {
     std::cout << "Usage: " << argv[0] << " <port>" << std::endl;
